@@ -1,0 +1,26 @@
+{
+  "name": "@serayaeryn/memory-cache",
+  "version": "1.0.0",
+  "description": "simple memory cache",
+  "main": "./lib/Cache.js",
+  "scripts": {
+    "unit": "ava test/*Test.js",
+    "test": "npm run lint && npm run unit",
+    "lint": "standard lib/* test/*",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "coverage": "nyc npm test && nyc report --reporter=html"
+  },
+  "author": "Denis Fäcke",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "benchmark": "^2.1.4",
+    "coveralls": "^3.0.6",
+    "memory-cache": "^0.2.0",
+    "nyc": "^14.1.1",
+    "standard": "^13.1.0"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  }
+}
